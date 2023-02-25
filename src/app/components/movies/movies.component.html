@@ -1,0 +1,21 @@
+<div class="app">
+  <h1>MovieApp</h1>
+    <form (submit)="submitMovie(nombrePelicula)" class="form-inline">
+      <div class="navbar navbar-expand-md">
+        <div class="navbar-nav">
+          <input class="form-control" #nombrePelicula type="search" placeholder="Buscar pelicula" aria-label="Search">
+          <button className="boton" class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+        </div>  
+      </div>
+    </form>
+  </div>  
+
+<div class="container">
+    <app-card-movie *ngFor="let movie of movies" [movie]="movie"></app-card-movie>
+</div>
+
+
+
+
+
+
